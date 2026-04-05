@@ -4,9 +4,11 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-export default function signup() {
-  const router = useRouter();
 
+
+export default function Signup() {
+  const router = useRouter();
+  
   // Form state
   const [formData, setFormData] = useState({
     fullName: "",

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface NavbarProps {
   userName: string;
   onLogout?: () => void;
@@ -7,9 +9,9 @@ export default function Navbar({ userName, onLogout }: NavbarProps) {
   return (
     <nav className="flex h-16 items-center justify-between border-b border-gray-200 bg-white px-6">
       <div className="flex items-center gap-4">
-        <a href="/" className="text-xl font-bold text-gray-900">
+        <Link href="/" className="text-xl font-bold text-gray-900">
           TaskFlow
-        </a>
+        </Link>
       </div>
       <div className="flex items-center gap-4">
         <span className="text-sm text-gray-600">{userName}</span>
